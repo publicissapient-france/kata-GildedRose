@@ -39,3 +39,9 @@ Cependant, nous devons vous prévenir, ne devez modifier en aucun cas la classe 
 (Vous pouvez ajouter une méthode `updateQuality` et des propriétés statiques dans la classe `Item` si vous voulez, nous vous couvrirons)
 
 Juste une précision, un produit ne peut jamais voir sa qualité augmenter au-dessus de 50, cependant "Sulfuras" est un objet légendaire et comme tel sa qualité est de 80 et il ne change jamais.
+
+# Notes
+
+Ce kata a été à l'origine créé par Terry Hughes et est [disponible sur GitHub dans sa version originale en C#](https://github.com/NotMyself/GildedRose). 
+Nous nous basons sur [la version d'Emily Bache](https://github.com/emilybache/GildedRose-Refactoring-Kata) que nous avons enrichie de tests pour vous permettre de vous concentrer sur le code
+plutôt que sur l'écriture de ces derniers.  

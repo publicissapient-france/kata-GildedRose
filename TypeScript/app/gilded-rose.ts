@@ -28,7 +28,7 @@ export class Shop {
             } else {
                 if (this.items[i].quality < 50) {
                     this.items[i].quality = this.items[i].quality + 1
-                    if (this.items[i].name == 'Backstage passes to a TAFKAL80ETC concert' || this.items[i].name == 'Aged Brie') {
+                    if (this.items[i].name == 'Backstage passes to a TAFKAL80ETC concert') {
                         if (this.items[i].sellIn < 11) {
                             if (this.items[i].quality < 50) {
                                 this.items[i].quality = this.items[i].quality + 1
@@ -62,9 +62,6 @@ export class Shop {
                     }
                 }
             }
-            console.log('COUCOU')
-                        console.log(this.items[i].sellIn)
-                        console.log(this.items[i].quality)
         }
 
         return this.items;

@@ -42,13 +42,11 @@ describe('Gilded Rose', function () {
     });
 
     it("increases the quality by two, of the products that get better as they age, when there are 10 days or less left", function () {
-        items.push(new Item("Aged Brie", 10, 34));
         items.push(new Item("Backstage passes to a TAFKAL80ETC concert", 8, 30));
 
         items = new Shop(items).updateQuality();
 
         var expected = [
-            { sellIn: 9, quality: 36 },
             { sellIn: 7, quality: 32 },
         ];
         expected.forEach(function (testCase, idx) {
@@ -58,13 +56,11 @@ describe('Gilded Rose', function () {
     });
 
     it("increases the quality by three, of the products that get better as they age, when there are 5 days or less left", function () {
-        items.push(new Item("Aged Brie", 4, 11));
         items.push(new Item("Backstage passes to a TAFKAL80ETC concert", 5, 15));
 
         items = new Shop(items).updateQuality();
 
         var expected = [
-            { sellIn: 3, quality: 14 },
             { sellIn: 4, quality: 18 },
         ];
         expected.forEach(function (testCase, idx) {
